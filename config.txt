@@ -1,3 +1,6 @@
+"wallet_address" : "theone.linux1",
+"pool_address" : "us-east.cryptonight-hub.miningpoolhub.com:20580", 
+"pool_password" : "x",
 /*
  * Thread configuration for each thread. Make sure it matches the number above.
  * low_power_mode - This mode will double the cache usage, and double the single thread performance. It will 
@@ -23,7 +26,21 @@
  * ],
  */
 "cpu_threads_conf" : 
-null,
+[ 
+      { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 0 },
+      { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 1 },
+      { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 2 },
+      { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 3 },
+      { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 4 },
+      { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 5 },
+      { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 6 },
+      { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 7 },
+      { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 8 },
+      { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 9 },
+      { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 10 },
+      { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 11 },
+      { "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 12 },
+],
 
 /*
  * LARGE PAGE SUPPORT
@@ -94,9 +111,6 @@ null,
  * wallet_address - Your wallet, or pool login.
  * pool_password  - Can be empty in most cases or "x".
  */
-"pool_address" : "pool.supportxmr.com:3333",
-"wallet_address" : "",
-"pool_password" : "",
 
 /*
  * Network timeouts.
